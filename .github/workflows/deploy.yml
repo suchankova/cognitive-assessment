@@ -17,6 +17,7 @@ name: Deploy to GitHub Pages
            run: |
              npm ci
              npm run build
+             touch build/.nojekyll
          - name: Deploy
            uses: JamesIves/github-pages-deploy-action@v4
            with:
